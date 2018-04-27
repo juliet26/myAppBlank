@@ -22,3 +22,12 @@ angular.module('starter', ['ionic'])
     }
   });
 })
+//configuramos el proveedor neto de ionic para parametrizar el controlador y la vista
+.config(function($stateProvider){
+	$stateProvider
+	.state('welcome', {
+		url:'',
+		templateUrl:'welcome/welcome.html',
+		controller:'welcomeCtrl'
+	});
+});
